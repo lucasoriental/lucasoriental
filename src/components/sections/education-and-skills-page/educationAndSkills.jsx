@@ -59,7 +59,6 @@ const EducationAndSkillsPage = () => {
           className="title-general"
           style={{ color: "#444444" }}
           data-aos="fade-right"
-          data-aos-anchor-placement="bottom-bottom"
         >
           {t("sections.educationAndSkillsPage.title")}
         </p>
@@ -84,22 +83,13 @@ const EducationAndSkillsPage = () => {
                     className="EAS-title-general"
                     style={{ color: "#444444" }}
                     data-aos="fade-right"
-                    data-aos-anchor-placement="bottom-bottom"
                   >
                     {t("sections.educationAndSkillsPage.section1.title")}
                   </p>
                 </div>
                 <div className="column-2-teste">
-                  <canvas
-                    className="bar-1"
-                    data-aos="fade-right"
-                    data-aos-anchor-placement="bottom-bottom"
-                  />
-                  <canvas
-                    className="bar-2"
-                    data-aos="fade-left"
-                    data-aos-anchor-placement="bottom-bottom"
-                  />
+                  <canvas className="bar-1" data-aos="fade-right" />
+                  <canvas className="bar-2" data-aos="fade-left" />
                 </div>
               </div>
               <College data={educationAndSkillsInformation.college} />
@@ -111,7 +101,6 @@ const EducationAndSkillsPage = () => {
                     className="EAS-title-general"
                     style={{ color: "#444444" }}
                     data-aos="fade-right"
-                    data-aos-anchor-placement="bottom-bottom"
                   >
                     {t(
                       "sections.educationAndSkillsPage.section2and3.titleSkills"
@@ -119,58 +108,32 @@ const EducationAndSkillsPage = () => {
                   </p>
                 </div>
                 <div className="column-2-teste">
-                  <canvas
-                    className="bar-1"
-                    data-aos="fade-right"
-                    data-aos-anchor-placement="bottom-bottom"
-                  />
-                  <canvas
-                    className="bar-2"
-                    data-aos="fade-left"
-                    data-aos-anchor-placement="bottom-bottom"
-                  />
+                  <canvas className="bar-1" data-aos="fade-right" />
+                  <canvas className="bar-2" data-aos="fade-left" />
                 </div>
               </div>
               <div className="subtitle-and-canvas">
-                <canvas
-                  className="bar-before"
-                  data-aos="fade-right"
-                  data-aos-anchor-placement="bottom-bottom"
-                />
+                <canvas className="bar-before" data-aos="fade-right" />
                 <p
                   className="EAS-title-section"
                   style={{ color: "#444444" }}
                   data-aos="fade-right"
-                  data-aos-anchor-placement="bottom-bottom"
                 >
                   {t("sections.educationAndSkillsPage.section2and3.itSec")}
                 </p>
-                <canvas
-                  className="bar-after"
-                  data-aos="fade-left"
-                  data-aos-anchor-placement="bottom-bottom"
-                />
+                <canvas className="bar-after" data-aos="fade-left" />
               </div>
               <Skills data={educationAndSkillsInformation.skillsIT} />
               <div className="subtitle-and-canvas">
-                <canvas
-                  className="bar-before"
-                  data-aos="fade-right"
-                  data-aos-anchor-placement="bottom-bottom"
-                />
+                <canvas className="bar-before" data-aos="fade-right" />
                 <p
                   className="EAS-title-section"
                   style={{ color: "#444444" }}
                   data-aos="fade-right"
-                  data-aos-anchor-placement="bottom-bottom"
                 >
                   {t("sections.educationAndSkillsPage.section2and3.desSec")}
                 </p>
-                <canvas
-                  className="bar-after"
-                  data-aos="fade-left"
-                  data-aos-anchor-placement="bottom-bottom"
-                />
+                <canvas className="bar-after" data-aos="fade-left" />
               </div>
               <Skills data={educationAndSkillsInformation.skillsDesign} />
             </div>
@@ -181,7 +144,6 @@ const EducationAndSkillsPage = () => {
                     className="EAS-title-general"
                     style={{ color: "#444444" }}
                     data-aos="fade-right"
-                    data-aos-anchor-placement="bottom-bottom"
                   >
                     {t(
                       "sections.educationAndSkillsPage.section2and3.titleCert"
@@ -189,60 +151,34 @@ const EducationAndSkillsPage = () => {
                   </p>
                 </div>
                 <div className="column-2-teste">
-                  <canvas
-                    className="bar-1"
-                    data-aos="fade-right"
-                    data-aos-anchor-placement="bottom-bottom"
-                  />
-                  <canvas
-                    className="bar-2"
-                    data-aos="fade-left"
-                    data-aos-anchor-placement="bottom-bottom"
-                  />
+                  <canvas className="bar-1" data-aos="fade-right" />
+                  <canvas className="bar-2" data-aos="fade-left" />
                 </div>
               </div>
               <div className="subtitle-and-canvas">
-                <canvas
-                  className="bar-before"
-                  data-aos="fade-right"
-                  data-aos-anchor-placement="bottom-bottom"
-                />
+                <canvas className="bar-before" data-aos="fade-right" />
                 <p
                   className="EAS-title-section"
                   style={{ color: "#444444" }}
                   data-aos="fade-right"
-                  data-aos-anchor-placement="bottom-bottom"
                 >
                   {t("sections.educationAndSkillsPage.section2and3.itSec")}
                 </p>
-                <canvas
-                  className="bar-after"
-                  data-aos="fade-left"
-                  data-aos-anchor-placement="bottom-bottom"
-                />
+                <canvas className="bar-after" data-aos="fade-left" />
               </div>
               <Certificates
                 data={educationAndSkillsInformation.certificatesIT}
               />
               <div className="subtitle-and-canvas">
-                <canvas
-                  className="bar-before"
-                  data-aos="fade-right"
-                  data-aos-anchor-placement="bottom-bottom"
-                />
+                <canvas className="bar-before" data-aos="fade-right" />
                 <p
                   className="EAS-title-section"
                   style={{ color: "#444444" }}
                   data-aos="fade-right"
-                  data-aos-anchor-placement="bottom-bottom"
                 >
                   {t("sections.educationAndSkillsPage.section2and3.desSec")}
                 </p>
-                <canvas
-                  className="bar-after"
-                  data-aos="fade-left"
-                  data-aos-anchor-placement="bottom-bottom"
-                />
+                <canvas className="bar-after" data-aos="fade-left" />
               </div>
               <Certificates
                 data={educationAndSkillsInformation.certificatesDesign}

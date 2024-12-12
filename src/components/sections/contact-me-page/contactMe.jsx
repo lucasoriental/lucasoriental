@@ -14,11 +14,7 @@ const contactMePage = () => {
   return (
     <div id="contact-me-container">
       <div className="container-general">
-        <p
-          className="title-general"
-          data-aos="fade-up"
-          data-aos-anchor-placement="bottom-bottom"
-        >
+        <p className="title-general" data-aos="fade-up">
           {t("sections.contactMePage.title")}
         </p>
         <div className="contact-me-form-social">

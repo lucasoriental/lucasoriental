@@ -3,22 +3,18 @@ import XIconSvg from "../../../assets/common_elements/icon_X";
 import MenuHamburguer from "../../../assets/common_elements/icon_menu_hamburger";
 
 import { useTranslation } from "react-i18next";
-
 import LanguageSwitcher from "../../../LanguageSwitcher";
 
 import { Link } from "react-scroll";
 
 const Header = () => {
   const { t } = useTranslation();
-
   const headerHeight = 120;
-
   const [isActive, setIsActive] = useState(false);
 
   const handleClick = () => {
     const btnMenu = document.querySelector(".hamburguer");
     const mob_menu = document.querySelector(".header-mobile-side-bar");
-
     btnMenu.classList.toggle("is-active");
     mob_menu.classList.toggle("is-active");
     setIsActive(!isActive);

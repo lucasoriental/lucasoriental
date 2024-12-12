@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import image from "../../../assets/pictures/img_about_me_section.jpeg";
 
 import { useTranslation } from "react-i18next";
@@ -54,7 +54,6 @@ const AboutMePage = () => {
           className="title-general"
           style={{ color: "#444444" }}
           data-aos="fade-up"
-          data-aos-anchor-placement="top-center"
         >
           {t("sections.aboutMePage.title")}
         </p>
@@ -64,7 +63,6 @@ const AboutMePage = () => {
             src={image}
             className="about-me-image"
             data-aos="fade-right"
-            data-aos-anchor-placement="top-center"
           />
 
           {isLoading === true ? (

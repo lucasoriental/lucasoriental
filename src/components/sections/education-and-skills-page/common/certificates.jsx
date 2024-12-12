@@ -20,16 +20,11 @@ export default function Certificates(props) {
             <div className="EAS-certificates" key={certificate.id}>
               <img
                 data-aos="fade-right"
-                data-aos-anchor-placement="bottom-bottom"
                 alt="credential_img"
                 src={certificate.img}
                 className="EAS-certificates-picture"
               />
-              <div
-                className="EAS-certificates-div"
-                data-aos="fade-left"
-                data-aos-anchor-placement="bottom-bottom"
-              >
+              <div className="EAS-certificates-div" data-aos="fade-left">
                 <button
                   className="EAS-certificates-title-link"
                   onClick={() => {

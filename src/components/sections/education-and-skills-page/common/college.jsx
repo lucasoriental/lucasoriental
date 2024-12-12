@@ -1,7 +1,6 @@
 import React from "react";
 
 import { useTranslation } from "react-i18next";
-import i18n from "../../../../i18n";
 
 export default function College(props) {
   const { t } = useTranslation();
@@ -13,7 +12,6 @@ export default function College(props) {
           <div className="EAS-college-img-and-info" key={college.id}>
             <img
               data-aos="fade-left"
-              data-aos-anchor-placement="bottom-bottom"
               alt="College_picture"
               src={college.img}
               className="EAS-college-picture"
@@ -21,7 +19,6 @@ export default function College(props) {
             <div
               className="EAS-college-info-div"
               data-aos="fade-right"
-              data-aos-anchor-placement="bottom-bottom"
             >
               <a
                 href={college.websiteLink}

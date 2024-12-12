@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import XIconSvg from "../../../../assets/common_elements/icon_X";
 import BehanceIcon from "../../../../assets/light_theme/Behance";
 import GitHubIcon from "../../../../assets/light_theme/GitHub";
 import BrowserIcon from "../../../../assets/light_theme/browser";
-
-import { useTranslation } from "react-i18next";
 
 export default function MyProjectModal({ information, setOpenModal }) {
   const [iconSize, setIconSize] = useState(window.innerWidth <= 800 ? 15 : 30);
@@ -17,6 +16,7 @@ export default function MyProjectModal({ information, setOpenModal }) {
     const handleResize = () => {
       setIconSize(window.innerWidth <= 800 ? 15 : 30);
     };
+    
 
     window.addEventListener("resize", handleResize);
     return () => {

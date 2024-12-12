@@ -1,9 +1,7 @@
 import { useEffect, useState } from "react";
-import MyProjectModal from "./common/myProjectModal";
-
 import { useTranslation } from "react-i18next";
-
 import i18n from "../../../i18n";
+import MyProjectModal from "./common/myProjectModal";
 
 const MyProjectsPage = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -55,11 +53,7 @@ const MyProjectsPage = () => {
     <div id="my-projects-container">
       <div className="container-general">
         <div>
-          <p
-            className="title-general"
-            data-aos="fade-up"
-            data-aos-anchor-placement="bottom-bottom"
-          >
+          <p className="title-general" data-aos="fade-up">
             {t("sections.myProjectsPage.title")}
           </p>
         </div>
@@ -91,11 +85,7 @@ const MyProjectsPage = () => {
               }
               return (
                 <div key={project.id} className="div-each-project">
-                  <div
-                    className="div-project-image"
-                    data-aos="fade-left"
-                    data-aos-anchor-placement="bottom-bottom"
-                  >
+                  <div className="div-project-image" data-aos="fade-left">
                     <img
                       className="project-image"
                       src={project.img}
@@ -104,17 +94,12 @@ const MyProjectsPage = () => {
                   </div>
                   <div
                     data-aos="fade-right"
-                    data-aos-anchor-placement="bottom-bottom"
                   >
                     <p className="project-title">{project.projectName}</p>
                     <p className="project-sub-title">{project.projectArea}</p>
                     <div className="my-project-tec-images">{tecs}</div>
                   </div>
-                  <a
-                    className="project-link-button"
-                    data-aos="fade-left"
-                    data-aos-anchor-placement="bottom-bottom"
-                  >
+                  <a className="project-link-button" data-aos="fade-left">
                     <button
                       onClick={() => {
                         setSelectedProject(index);
