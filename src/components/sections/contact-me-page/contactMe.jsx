@@ -9,7 +9,7 @@ import NumberSVG from "../../../assets/light_theme/wpp_or_call";
 
 import { useTranslation } from "react-i18next";
 
-const contactMePage = () => {
+const ContactMePage = () => {
   const { t } = useTranslation();
   return (
     <div id="contact-me-container">
@@ -114,4 +114,4 @@ const contactMePage = () => {
   );
 };
 
-export default contactMePage;
+export default ContactMePage;
