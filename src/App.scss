@@ -1726,3 +1726,37 @@ body.modal-open {
 .modal-project-list {
   margin-left: 25px;
 }
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--DarkGray);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  border: 2px solid var(--DeepGray);
+  backface-visibility: hidden;
+  z-index: 1000;
+  transition: 500ms;
+  transform: rotate(0);
+  opacity: 0;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.scroll-to-top:hover {
+  background-color: var(--RedDark);
+  transform: rotate(360deg);
+  transition: 1000ms;
+  box-shadow: 0 0 15px 5px var(--DeepGray);
+}
+
+.scroll-to-top.visible {
+  opacity: 1;
+}
