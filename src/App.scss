@@ -15,6 +15,7 @@
 // General Styles
 // ------------------------------------
 
+/* Language Buttons */
 .languageSwitcher-en-button,
 .languageSwitcher-pt-button {
   width: 22px;
@@ -35,6 +36,73 @@
   align-items: center;
   gap: 10px;
 }
+
+
+/* ScrollToTopButton.jsx */
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--DarkGray);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  border: 2px solid var(--DeepGray);
+  backface-visibility: hidden;
+  z-index: 1000;
+  transition: 500ms;
+  transform: rotate(0);
+  opacity: 0;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.scroll-to-top:hover {
+  background-color: var(--RedDark);
+  transform: rotate(360deg);
+  transition: 1000ms;
+  box-shadow: 0 0 15px 5px var(--DeepGray);
+}
+
+.scroll-to-top.visible {
+  opacity: 1;
+}
+
+/* ParticlesEffect.css */
+#particle-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.particle {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #dfdfdf;
+  animation: particle-animation 3s ease-out forwards;
+}
+
+@keyframes particle-animation {
+  0% {
+    transform: scale(1) translate(0, 0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(0) translate(var(--x), var(--y));
+    opacity: 0;
+  }
+}
+
 
 .title-general {
   font-size: 70px;
@@ -226,7 +294,9 @@
   max-width: 1440px;
   padding-top: 150px;
   margin: 0 auto;
+  background-color: white;
 }
+
 
 .home-main-container-1 {
   display: flex;
@@ -1727,36 +1797,3 @@ body.modal-open {
   margin-left: 25px;
 }
 
-.scroll-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: var(--DarkGray);
-  color: white;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 60px;
-  height: 60px;
-  cursor: pointer;
-  border: 2px solid var(--DeepGray);
-  backface-visibility: hidden;
-  z-index: 1000;
-  transition: 500ms;
-  transform: rotate(0);
-  opacity: 0;
-  font-size: 25px;
-  font-weight: 500;
-}
-
-.scroll-to-top:hover {
-  background-color: var(--RedDark);
-  transform: rotate(360deg);
-  transition: 1000ms;
-  box-shadow: 0 0 15px 5px var(--DeepGray);
-}
-
-.scroll-to-top.visible {
-  opacity: 1;
-}
