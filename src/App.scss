@@ -25,7 +25,7 @@
 }
 
 .selected {
-  background-color: var(--RedLight);
+  background-color: var(--RedDark);
   border: 1px solid black;
   color: white;
 }
@@ -60,8 +60,8 @@
 //Header Setup global
 
 #header-main {
+  // Done
   background-color: var(--RedLight);
-  color: var(--White);
   width: 100%;
   position: fixed;
   box-shadow: 0px 0px 50px var(--DarkGray);
@@ -76,7 +76,7 @@
   padding: 0px 58px;
   align-items: center;
 
-  @media (max-width: 752px) {
+  @media (max-width: 970px) {
     display: none;
   }
 }
@@ -85,6 +85,7 @@
   display: flex;
   max-width: 1440px;
   justify-content: center;
+  align-items: center;
 
   a {
     cursor: pointer;
@@ -94,8 +95,11 @@
     text-decoration: none;
     list-style-type: none;
     font-size: 15px;
-    font-weight: 700;
-    transition: 600ms;
+    font-weight: 500;
+    transition: 500ms;
+
+    transform: translateY(0px);
+
 
     @media (max-width: 912px) {
       font-size: 10px;
@@ -103,18 +107,18 @@
   }
 
   a:hover {
-    transition: 600ms;
-    font-weight: 900;
-    color: var(--HoverTextColor)
+    transition: 500ms;
+    color: var(--HoverTextColor);
+    transform: translateY(-5px);
   }
 }
 
-.header-desktop-theme {
+/* .header-desktop-theme {
   padding-right: 15px;
   cursor: pointer;
   display: flex;
   align-items: center;
-}
+} */
 
 .header-desktop-language {
   margin-left: 15px;
@@ -128,7 +132,7 @@
 #header-mobile {
   display: none;
 
-  @media (max-width: 752px) {
+  @media (max-width: 970px) {
     display: contents;
   }
 }
@@ -185,14 +189,15 @@
     text-align: center;
     text-decoration: none;
     color: var(--White);
-    font-weight: 300;
+    font-weight: 500;
     cursor: pointer;
+    transition: 600ms;
   }
 
   a:hover {
     background-color: var(--RedDark);
-    color: var(--HoverTextColor);
-    font-weight: 700;
+    transform: translateY(-5px);
+    transition: 600ms;
   }
 }
 
@@ -211,10 +216,6 @@
 
 .header-mobile-side-bar-top-Theme {
   cursor: pointer;
-}
-
-.header-theme-selected {
-  background-color: blue;
 }
 
 // -------------------------------------
@@ -1070,7 +1071,7 @@
   }
 
   @media (max-width: 398px) {
-    margin-bottom: 15px; 
+    margin-bottom: 15px;
   }
 }
 
