@@ -73,6 +73,15 @@
   opacity: 1;
 }
 
+@media (hover: none) {
+  //Fixing mobile hover effect
+  .scroll-to-top:hover {
+    background-color: var(--DarkGray);
+    transform: none;
+    box-shadow: none;
+  }
+}
+
 /* ParticlesEffect.css */
 #particle-container {
   position: fixed;
